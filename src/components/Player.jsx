@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import { Vector3 } from 'three';
 import { useKeyboard } from '../hooks/UseKeyboard';
 
-const CHARACTER_SPEED = 20;
+const CHARACTER_SPEED = 5;
 const CHARACTER_JUMP_FORCE = 5;
 
 export const Player = () => {
