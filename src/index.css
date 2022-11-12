@@ -42,6 +42,8 @@ body,
 	border-right: 2px solid #333;
 	cursor: pointer;
 	image-rendering: pixelated;
+	aspect-ratio: 1;
+	object-fit: cover;
 	width: 65px;
 }
 .texture-selector img.selected {
