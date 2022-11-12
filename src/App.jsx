@@ -6,15 +6,16 @@ import { FPV as Fpv } from './components/FPV';
 import { Player } from './components/Player';
 import { Cubes } from './components/Cubes';
 import { TextureSelector } from './components/TextureSelector';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 function App() {
 	return (
 		<>
 			<Canvas>
-				<Sky sunPosition={[100, 100, 20]} />
+				<Sky sunPosition={[100, 0, 1]} />
 				<ambientLight intensity={0.5} />
 				<Fpv />
-				<TextureSelector />
 				<Physics>
 					<Cubes />
 					<Player />
@@ -22,6 +23,7 @@ function App() {
 				</Physics>
 			</Canvas>
 			<div className='pointer'>+</div>
+			<TextureSelector />
 		</>
 	);
 }

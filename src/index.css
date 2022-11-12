@@ -22,3 +22,29 @@ body,
 	top: 50%;
 	transform: translate(-50%, -50%);
 }
+
+.texture-selector {
+	background-color: #222;
+	border: 2px solid #000;
+	border-radius: 4px;
+	bottom: 1rem;
+	display: flex;
+	gap: 4px;
+	left: 50%;
+	overflow: hidden;
+	padding-inline: 2px;
+	position: absolute;
+	translate: -50%;
+}
+.texture-selector img {
+	border: 3px solid #666;
+	border-left: 2px solid #333;
+	border-right: 2px solid #333;
+	cursor: pointer;
+	image-rendering: pixelated;
+	width: 65px;
+}
+.texture-selector img.selected {
+	border-color: white;
+	border-radius: 10px;
+}

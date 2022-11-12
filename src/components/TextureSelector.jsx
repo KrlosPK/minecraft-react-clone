@@ -5,7 +5,7 @@ import { useKeyboard } from '../hooks/UseKeyboard.js';
 import { useEffect } from 'react';
 
 export const TextureSelector = () => {
-	const [visible, setVisible] = useState(false);
+	const [visible, setVisible] = useState(true);
 	const [texture, setTexture] = useStore((state) => [
 		state.texture,
 		state.setTexture
@@ -30,5 +30,23 @@ export const TextureSelector = () => {
 		}
 	}, [dirt, glass, grass, wood, log]);
 
-	return null;
+	return (
+		<div className='texture-selector'>
+			{Object.entries(images).map(([imgKey, img]) => {
+				return (
+					<img
+						className={
+							texture === imgKey.replace('Img', '')
+								? 'selected'
+								: ''
+						}
+						key={imgKey}
+						src={img}
+						alt={imgKey}
+						// hacerlo onClick
+					/>
+				);
+			})}
+		</div>
+	);
 };
