@@ -5,7 +5,6 @@ import { useKeyboard } from '../hooks/UseKeyboard.js';
 import { useEffect } from 'react';
 
 export const TextureSelector = () => {
-	const [visible, setVisible] = useState(true);
 	const [texture, setTexture] = useStore((state) => [
 		state.texture,
 		state.setTexture
@@ -43,7 +42,6 @@ export const TextureSelector = () => {
 						key={imgKey}
 						src={img}
 						alt={imgKey}
-						// hacerlo onClick
 					/>
 				);
 			})}
