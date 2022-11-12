@@ -1,5 +1,4 @@
 {
-	"homepage": "https://krlospk.github.io/minecraft-clone",
 	"name": "krloscraft",
 	"private": true,
 	"version": "0.0.0",
@@ -7,7 +6,8 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"deploy": "gh-pages -d dist"
 	},
 	"dependencies": {
 		"@react-three/cannon": "^6.5.0",
