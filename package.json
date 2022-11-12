@@ -1,4 +1,5 @@
 {
+	"homepage": "https://krlospk.github.io/minecraft-clone",
 	"name": "krloscraft",
 	"private": true,
 	"version": "0.0.0",
@@ -22,6 +23,7 @@
 		"@types/react": "18.0.24",
 		"@types/react-dom": "18.0.8",
 		"@vitejs/plugin-react": "2.2.0",
+		"gh-pages": "4.0.0",
 		"vite": "3.2.3"
 	}
 }
